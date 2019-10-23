@@ -1,0 +1,31 @@
+.nav-bar {
+  width: 100%;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+@keyframes mouseHover_nav {
+  from {
+    font-size: 15px;
+  }
+  to {
+    font-size: 14px;
+  }
+}
+
+.nav-bar .nav-bar__list {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 14px;
+  cursor: pointer;
+}
+
+.nav-bar .nav-bar__list i {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.nav-bar .nav-bar__list span:hover {
+  animation: mouseHover_nav 0.5s linear;
+}
